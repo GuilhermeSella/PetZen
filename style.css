@@ -374,7 +374,7 @@ iframe {
 .btnWhatsapp{
     
     position: fixed;
-    left: 20px;
+    right: 20px;
     top: 85%;
     z-index: 100;
     transition: .5s;
