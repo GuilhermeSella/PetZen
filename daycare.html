@@ -23,9 +23,9 @@
                 <nav>
                     <ul>
                         <li><a  href="index.html">Home</a></li>
-                        <li><a  href="#desc-moto">Sobre</a></li>
-                        <li><a  href="#planoDayCare">Planos</a></li>
-                        <li><a  href="#footer">Contato</a></li>
+                        <li><a  style="cursor: pointer;" onclick="scrollToPlanoDaySobre()">Sobre</a></li>
+                        <li><a style="cursor: pointer;" onclick="scrollToPlanoDayCare()">Planos</a></li>
+                        <li><a  style="cursor: pointer;" onclick="scrollToEmail()">Contato</a></li>
                     </ul>
                     
                 </nav>
@@ -50,8 +50,8 @@
         <ul>
             <li><a onclick="fecharNav()" href="index.html">Home</a></li>
             <li><a onclick="fecharNav()" href="hospedagem.html">Hospedagem</a></li>
-            <li><a onclick="fecharNav()" href="#desc-moto">Sobre</a></li>
-            <li><a onclick="fecharNav()" href="#planoDayCare">Planos</a></li>
+            <li><a  style="cursor: pointer;" onclick="fecharNav(),scrollToPlanoDaySobre()">Sobre</a></li>
+            <li><a style="cursor: pointer;" onclick="fecharNav(),scrollToPlanoDayCare()">Planos</a></li>
             <li><a onclick="fecharNav()" href="#footer">Contato</a></li>
         </ul>
 
@@ -86,12 +86,13 @@
             <article>
                 <h1>Day Care</h1>
                  <br>
-                <p>Onde os nossos melhores amigos de quatro patas descobrem um paraíso de diversão e cuidado! Nossa creche de cachorros é um refúgio alegre e seguro, projetado especialmente para proporcionar um dia repleto de brincadeiras, socialização e afeto. Nossa missão é oferecer um day care excepcional, onde cada latido é recebido com amor e cada rabinho abana de felicidade. Junte-se a nós nessa aventura emocionante, onde a felicidade dos nossos queridos amiguinhosé a nossa maior inspiração!</p>
-                <a href="#sectionPlanoDayCare">Clique e conheça</a>
+                <p>Onde os nossos melhores amigos de quatro patas descobrem um paraíso de diversão e cuidado! Nossa creche de cachorros é um refúgio alegre e seguro, projetado especialmente para proporcionar um dia repleto de brincadeiras, socialização e afeto. Nossa missão é oferecer um day care excepcional, onde cada latido é recebido com amor e cada rabinho abana de felicidade. Junte-se a nós nessa aventura emocionante, onde a felicidade dos nossos queridos amiguinhos é a nossa maior inspiração!</p>
+                <a style="cursor: pointer;" onclick="scrollToPlanoDayCare()">Clique e conheça</a>
             </article>
         </section>
 
     </main> 
+   
 
     <!-- DESCRIÇÃO MOTO -->
 
@@ -108,19 +109,23 @@
         <section class="desc-moto-section">
             <div class="quadradinhos">
                 <img src="icons/icons8-parque-para-cães-60.png" alt="">
-                <p>Brincadeiras</p>
+                <h2>Brincadeiras</h2>
+                <p>O reforço positivo é uma abordagem eficaz e ética de treinamento, que fortalece o vínculo entre o dono e o pet, promove uma relação de confiança e ajuda a estabelecer comportamentos desejados de forma mais harmoniosa e positiva. </p>
             </div>
             <div class="quadradinhos">
                 <img src="icons/dog.png" alt="">
-                <p>Cromoterapia</p>
+                <h2>Cronomoterapia</h2>
+                <p>A cromoterapia é uma terapia complementar que utiliza as cores para auxiliar na restauração do equilíbrio físico e energético do corpo do cão. Essa prática terapêutica se baseia nas sete cores do arco-íris, cada uma com suas propriedades específicas e efeitos terapêuticos.</p>
             </div>
             <div class="quadradinhos">
                 <img src="icons/música.png" alt="">
-                <p>Musicaterapia</p>
+                <h2>Musicaterapia</h2>
+               <p>A musicoterapia é uma ciência que estuda como a música e o som podem ser utilizados com fins terapêuticos, considerando sua interação com os indivíduos. A música possui elementos como notas, melodia e ritmo que têm a capacidade de acionar áreas específicas no cérebro dos ouvintes, desencadeando efeitos e sensações benéficas para a saúde e o bem-estar. </p>
             </div>
             <div class="quadradinhos">
                 <img src="icons/icons8-dog-house-60.png" alt="">
-                <p>Relaxamento</p>
+                <h2>Método Grounding</h2>
+                <p>O método grounding, também conhecido como "earthing" ou "conexão com a terra," é uma prática terapêutica que envolve o contato direto do corpo do cão com a superfície da terra, como grama, terra ou areia, promovendo bem-estar físico e emocional, e contribuindo para uma saúde geral mais equilibrada. </p>
             </div>
         </section>
 
@@ -128,6 +133,7 @@
 
 
     <!-- PLANO DAY CARE -->
+    
 
    
         <section class="sectionPlanoDayCare" id="planoDayCare">
@@ -136,7 +142,7 @@
                 <figure>
                     <img src="assetsPet/DAYCARE.jpeg" alt="">
                 </figure>
-               <a href="https://wa.me/5511949995555?text=Olá Pet Zen esse é o nosso envio automatizado de mensagem!!!!" target="_blank"><button>Tenho interesse</button></a>
+               <a href="https://wa.me/5511949995555?text=Olá Pet Zen tenho interesse!" target="_blank"><button>Tenho interesse</button></a>
             </article>
               
         </section>
@@ -147,12 +153,12 @@
    <main class="contato">
 
         <div>
-            <h1 class="title">Mande um E-mail</h1>
+            <h1 class="title">Entre em contato conosco!</h1>
         </div>
 
         <div class="class-contato">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14632.300605362725!2d-46.706475130224604!3d-23.529799299999986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef877a61b4b1f%3A0x150b8f575400d71a!2sR.%20Aur%C3%A9lia%2C%20891%20-%20Vila%20Romana%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2005046-000!5e0!3m2!1spt-BR!2sbr!4v1688734302205!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <form class="Contato" id="Contato" onsubmit="submitForm(event)">
+            <form class="Contato" id="contactForm" onsubmit="submitForm(event)">
                 <div class="inputs">
                     <input type="text"  id= "teste" class="input"  placeholder="Nome"  required>
                     <input type="email" id="teste" class="input" placeholder="E-mail" required/>
@@ -167,14 +173,13 @@
 
       <!-- BOTAO WHATSAPP -->
 
-      <a target="_blank" class="btnWhatsapp" href="https://wa.me/5511949995555?text=Olá Pet Zen Gostaria de saber mais">
+    
+      <a target="_blank" class="btnWhatsapp" href="https://wa.me/5511949995555?text=Olá Casa PetZen! Gostaria de mais informações sobre a Creche e Hotel.">
         <img width="65" src="icons/whatsapp.png" alt="">
     </a>
-
     <!--  -->
 
    
-
     <footer id="footer">
 
         <div>
@@ -184,17 +189,17 @@
         <div class="listFooter">
             <h2>Atendimento</h2>
             <ul>
-                <li><a target="_blank" href="https://wa.me/5511949995555?text=Olá Pet Zen Gostaria de saber mais">Fale conosco</a></li>
-                <li><a href="">Contato</a></li>
+                <li><a target="_blank" href="https://wa.me/5511949995555?text=Olá Casa PetZen! Gostaria de mais informações sobre a Creche e Hotel.">Fale conosco</a></li>
+                <li><a  style="cursor: pointer;" onclick="scrollToEmail()">Contato</a></li>
                
             </ul>
         </div>
         <div class="listFooter">
             <h2>Informações</h2>
             <ul>
-                <li><a href="">casapetzen@gmail.com</a></li>
-                <li><a href="">(11)98378-7869</a></li>
-                <li><a href="">Rua Aurelia, 891, Lapa, São Paulo, SP</a></li>
+                <li><a href="">contato@casapetzen.com.br</a></li>
+                <li><a href="">(11)94999-5555</a></li>
+                <li><a href="">Rua Aurélia 891, Vila Romana - São Paulo SP</a></li>
             </ul>
         </div>
         
@@ -219,7 +224,6 @@
         
 
     </footer>
-
     <div class="madeby">
         <p>© 2023 Pet Zen. Todos os direitos reservados.</p>
         <p>

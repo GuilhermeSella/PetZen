@@ -56,8 +56,44 @@ function showConfirmation() {
     alert("Ótimo, recebemos seu E-mail, Entraremos em contato");
 }
 function scrollToContact() {
-    var contatoSection = document.getElementById("contato");
+    var contatoSection = document.getElementById("sobre-nos");
     var offset = 175; // Ajuste este valor para definir a quantidade de deslocamento para cima
+    var topPos = contatoSection.offsetTop - offset;
+    window.scrollTo({ top: topPos, behavior: "smooth" });
+}
+function scrollToSobre() {
+    var contatoSection = document.getElementById("sobre-nos");
+    var offset = 133; // Ajuste este valor para definir a quantidade de deslocamento para cima
+    var topPos = contatoSection.offsetTop - offset;
+    window.scrollTo({ top: topPos, behavior: "smooth" });
+}
+function scrollToPlanoDayCare() {
+    var contatoSection = document.getElementById("planoDayCare");
+    var offset = 80; // Ajuste este valor para definir a quantidade de deslocamento para cima
+    var topPos = contatoSection.offsetTop - offset;
+    window.scrollTo({ top: topPos, behavior: "smooth" });
+}
+function scrollToPlanoDaySobre(){
+    var contatoSection = document.getElementById("desc-moto");
+    var offset = 80; // Ajuste este valor para definir a quantidade de deslocamento para cima
+    var topPos = contatoSection.offsetTop - offset;
+    window.scrollTo({ top: topPos, behavior: "smooth" });
+}
+function scrollToPlanoHospedagem() {
+    var contatoSection = document.getElementById("planoHospedagem");
+    var offset = 80; // Ajuste este valor para definir a quantidade de deslocamento para cima
+    var topPos = contatoSection.offsetTop - offset;
+    window.scrollTo({ top: topPos, behavior: "smooth" });
+}
+function scrollToPlanoHospedagemSobre() {
+    var contatoSection = document.getElementById("desc-moto");
+    var offset = 80; // Ajuste este valor para definir a quantidade de deslocamento para cima
+    var topPos = contatoSection.offsetTop - offset;
+    window.scrollTo({ top: topPos, behavior: "smooth" });
+}
+function scrollToEmail() {
+    var contatoSection = document.getElementById("contactForm");
+    var offset = 260; // Ajuste este valor para definir a quantidade de deslocamento para cima
     var topPos = contatoSection.offsetTop - offset;
     window.scrollTo({ top: topPos, behavior: "smooth" });
 }

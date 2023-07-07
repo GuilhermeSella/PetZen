@@ -323,12 +323,14 @@ button {
 .desc-moto-section .quadradinhos {
     display: flex;
     flex-direction: column;
+    
     align-items: center;
-    border-radius: 12px;
+    border-radius: 10px;
     text-align: center;
-    gap: 10px;
-    padding: 20px 0;
-    width: 200px;
+    padding:  35px 10px;
+    width: 95vw;
+    max-width: 400px;
+    max-height: 450px;
     border: 3.5px solid rgb(14, 213, 70);
     transition: 0.5s;
 }
@@ -336,16 +338,23 @@ button {
     transform: translateY(-10px);
 }
 .desc-moto-section .quadradinhos p {
-    font-size: 1.4rem;
+    font-size: 1.1rem;
+    max-height: 400px;
+    
+}
+.desc-moto-section .quadradinhos h2{
+    color: rgb(14, 213, 70) ;
+    font-weight: bolder;
 }
 .desc-moto-section {
     padding: 2%;
     position: relative;
     top: -180px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    justify-items: center;
-    grid-gap: 50px;
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+   
 }
 @media screen and (max-width:700px) {
     .desc-moto-image img {
@@ -356,16 +365,6 @@ button {
 
     .desc-moto-image div h1 {
         font-size: 2.5rem;
-    }
-}
-@media screen and (max-width:1000px) {
-    .desc-moto-section {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-@media screen and (max-width:630px) {
-    .desc-moto-section {
-        grid-template-columns: 1fr;
     }
 }
 
