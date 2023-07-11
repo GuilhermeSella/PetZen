@@ -323,7 +323,7 @@ button {
 .desc-moto-section .quadradinhos {
     display: flex;
     flex-direction: column;
-    
+    justify-content: center;
     align-items: center;
     border-radius: 10px;
     text-align: center;
@@ -338,13 +338,28 @@ button {
     transform: translateY(-10px);
 }
 .desc-moto-section .quadradinhos p {
-    font-size: 1.1rem;
+    font-size: 1rem;
     max-height: 400px;
     
 }
 .desc-moto-section .quadradinhos h2{
     color: rgb(14, 213, 70) ;
     font-weight: bolder;
+}
+
+.desc-moto-section .quadradinhos a{
+    background-color:transparent;
+    color: rgb(14, 213, 70) ;
+    font-weight: bold;
+    padding:  15px 20px;
+    text-decoration: none;
+    border-radius: 12px;
+    transition: .8s;
+}
+
+.desc-moto-section .quadradinhos a:hover{
+    background-color: rgb(14, 213, 70) ;
+    color: white;
 }
 .desc-moto-section {
     padding: 2%;
@@ -497,6 +512,20 @@ iframe {
     transition: .5s;
 }
 .btnWhatsapp:hover{
+    transform: translateY(-15px);
+}
+
+/* BOTAO INSTAGRAM */
+
+.btnInsta{
+    
+    position: fixed;
+    right: 20px;
+    top: 74%;
+    z-index: 100;
+    transition: .5s;
+}
+.btnInsta:hover{
     transform: translateY(-15px);
 }
 

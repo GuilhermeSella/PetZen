@@ -382,6 +382,19 @@ iframe {
 .btnWhatsapp:hover{
     transform: translateY(-15px);
 }
+/* BOTAO INSTAGRAM */
+
+.btnInsta{
+    
+    position: fixed;
+    right: 20px;
+    top: 74%;
+    z-index: 100;
+    transition: .5s;
+}
+.btnInsta:hover{
+    transform: translateY(-15px);
+}
 
 
 /* FOOTER / RODAPÉ */

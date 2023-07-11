@@ -37,7 +37,7 @@ function submitForm(event) {
     var formData = new FormData(form);
     
     var xhr = new XMLHttpRequest();
-    xhr.open("POST", "https://formsubmit.co/magolokovirus@gmail.com", true);
+    xhr.open("POST", "https://formsubmit.co/tagoloko.9@gmail.com", true);
     
     xhr.onreadystatechange = function () {
         if (xhr.readyState === XMLHttpRequest.DONE) {
